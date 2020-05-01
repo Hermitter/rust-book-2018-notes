@@ -1,5 +1,6 @@
 // cargo run --bin ch12_building_a_cli_tool test ./assets/poem.txt
-mod lib;
+pub mod lib;
+mod tests;
 use lib::Config;
 use std::env;
 use std::process;

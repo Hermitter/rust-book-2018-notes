@@ -18,7 +18,7 @@ cargo run --bin ch1_hello_world
 - [x] Chapter 9
 - [x] Chapter 10
 - [x] Chapter 11
-- [ ] Chapter 12
+- [x] Chapter 12
 - [ ] Chapter 13
 - [ ] Chapter 14
 - [ ] Chapter 15
