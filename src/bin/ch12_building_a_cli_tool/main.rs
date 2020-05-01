@@ -12,12 +12,14 @@ fn main() {
 
     // extract the regex query and filename to scan
     let config = Config::new(&args).unwrap_or_else(|err| {
-        println!("Problem parsing arguments: {}", err);
+        // prints error to Standard Error instead of Standard Output
+        eprintln!("Problem parsing arguments: {}", err);
         process::exit(1);
     });
 
+    // print search matches
     if let Err(e) = lib::run(config) {
-        println!("Application error: {}", e);
+        eprintln!("Application error: {}", e);
         process::exit(1);
     }
 }
